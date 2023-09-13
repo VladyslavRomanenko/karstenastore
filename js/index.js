@@ -27,11 +27,6 @@ function startTimer(timerElement) {
       hoursElement.textContent = hours.toString().padStart(2, "0");
       minutesElement.textContent = minutes.toString().padStart(2, "0");
       secondsElement.textContent = seconds.toString().padStart(2, "0");
-
-      // Сохраняем текущее состояние таймера в локальном хранилище
-      localStorage.setItem("timerHours", hours);
-      localStorage.setItem("timerMinutes", minutes);
-      localStorage.setItem("timerSeconds", seconds);
     }
   }, 1000);
 }
@@ -40,3 +35,35 @@ const timerElements = document.querySelectorAll(".timer");
 timerElements.forEach(function (timerElement) {
   startTimer(timerElement);
 });
+
+// slider
+const slider = document.querySelector(".slider");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+
+let currentIndex = 0;
+
+function goToSlide(index) {
+  if (index < 0) {
+    currentIndex = slider.children.length - 1;
+  } else if (index >= slider.children.length) {
+    currentIndex = 0;
+  }
+  const translateX = -currentIndex * 100;
+  slider.style.transform = `translateX(${translateX}%)`;
+}
+
+prevButton.addEventListener("click", () => {
+  currentIndex--;
+  goToSlide(currentIndex);
+});
+
+nextButton.addEventListener("click", () => {
+  currentIndex++;
+  goToSlide(currentIndex);
+});
+
+setInterval(() => {
+  currentIndex++;
+  goToSlide(currentIndex);
+}, 3000);

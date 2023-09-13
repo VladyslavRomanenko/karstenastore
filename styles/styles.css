@@ -166,3 +166,59 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
+/* _______________________________ */
+.slider-container {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slider-img {
+  width: 100%;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+}
+
+.slider-btn {
+  background-color: rgb(181, 181, 181);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  fill: rgb(20, 95, 99);
+}
+
+/* information */
+
+.information {
+  padding: 20px 15px;
+}
+
+.information-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.information-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
