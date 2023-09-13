@@ -77,6 +77,10 @@ body {
   font-weight: 500;
 }
 
+.text-weight {
+  font-weight: 600;
+}
+
 /* -------------- price ---------*/
 .price {
   display: flex;
@@ -88,6 +92,9 @@ body {
   padding: 15px;
   width: 50%;
   text-align: center;
+}
+
+.price-border {
   border-left: 1px solid white;
 }
 
