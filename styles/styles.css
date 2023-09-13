@@ -78,7 +78,7 @@ body {
 }
 
 .text-weight {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* -------------- price ---------*/
@@ -173,6 +173,18 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
+
+.secondary-text {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.secondary-text-bold {
+  font-size: 16px;
+  color: rgb(219, 3, 68);
+  font-weight: 600;
+}
 /* _______________________________ */
 .slider-container {
   margin: 0 auto;
@@ -222,6 +234,7 @@ body {
 .information-title {
   text-align: center;
   margin-bottom: 15px;
+  color: rgb(20, 95, 99);
 }
 
 .information-text {
@@ -231,3 +244,41 @@ body {
   text-indent: 0.7rem;
   margin-bottom: 10px;
 }
+
+.animation {
+  margin-bottom: 40px;
+}
+
+/*---------- advantages ---------- */
+
+.advantages {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.advantages-title {
+  margin-bottom: 20px;
+  color: rgb(20, 95, 99);
+}
+
+.advantages-list-item {
+  margin-bottom: 20px;
+}
+
+.advantages-img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.advantages-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ------------ video */
+.video {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* ------------- reviews */
