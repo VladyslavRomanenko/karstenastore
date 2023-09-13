@@ -66,4 +66,4 @@ nextButton.addEventListener("click", () => {
 setInterval(() => {
   currentIndex++;
   goToSlide(currentIndex);
-}, 3000);
+}, 5000);
