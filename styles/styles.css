@@ -81,6 +81,14 @@ body {
   font-weight: 700;
 }
 
+@media screen and (min-width: 767.98px) {
+  .main-text {
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+  }
+}
+
 /* -------------- price ---------*/
 .price {
   display: flex;
@@ -135,6 +143,8 @@ body {
 .time-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   background: linear-gradient(
     to bottom,
@@ -155,6 +165,22 @@ body {
 .time-box-text {
   color: white;
   font-size: 15px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .time-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .time {
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  .time-box-text {
+    font-size: 17px;
+  }
 }
 
 /* ------------ order link ---------- */
@@ -193,6 +219,30 @@ body {
   color: rgb(219, 3, 68);
   font-weight: 600;
 }
+
+@media screen and (min-width: 375px) {
+  .order-link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .order-link {
+    font-size: 25px;
+    padding: 20px 40px;
+  }
+
+  .secondary-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .secondary-text-bold {
+    font-size: 18px;
+    color: rgb(219, 3, 68);
+  }
+}
+
 /* _______________________________ */
 .slider-container {
   margin: 0 auto;
@@ -264,6 +314,21 @@ body {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 767.98px) {
+  .information {
+    padding: 25px 15px;
+  }
+
+  .information-title {
+    font-size: 25px;
+  }
+
+  .information-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 /*---------- advantages ---------- */
 
 .advantages {
@@ -290,6 +355,30 @@ body {
   font-weight: 500;
 }
 
+@media screen and (min-width: 767.98px) {
+  .advantages-title {
+    font-size: 25px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+  }
+
+  .advantages-list-item {
+    width: 350px;
+    height: 300px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 2px 2px rgb(189, 189, 189);
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* ------------ video */
 .video {
   width: 100%;
@@ -347,6 +436,30 @@ body {
 
 .review {
   text-align: center;
+}
+
+@media screen and (min-width: 767.98px) {
+  .reviews-title {
+    font-size: 25px;
+  }
+
+  .reviews-text {
+    font-size: 16px;
+  }
+
+  .reviews-list-item {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .review-name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .review {
+    font-size: 20px;
+  }
 }
 
 /* ------------ how to order */
@@ -411,6 +524,43 @@ body {
   }
 }
 
+@media screen and (min-width: 767.98px) {
+  .how-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .how-list-item {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+  }
+
+  .how-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .how-number {
+    transform: translate(-50%, -230%);
+  }
+}
+
+/* ----------- form ---------- */
+
 .form-box {
   padding: 20px 10px;
   text-align: center;
@@ -438,6 +588,8 @@ body {
   text-align: center;
   border-radius: 25px;
   font-size: 20px;
+  color: #004154;
+  font-weight: 600;
 }
 
 .input-address::placeholder {
