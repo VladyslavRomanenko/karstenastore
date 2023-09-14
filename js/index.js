@@ -67,3 +67,55 @@ setInterval(() => {
   currentIndex++;
   goToSlide(currentIndex);
 }, 5000);
+
+// ----------- form -------- //
+
+const formRef = document.querySelector(".form");
+const backDrop = document.querySelector(".backdrop");
+const backBtn = document.querySelector(".thanks-link");
+
+const TOKEN = "6550736884:AAHCUGBNoVfbdOki4yPaK1VYwWkhmQo6V9w";
+const CHAT_ID = "-1001944530488";
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+formRef.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = formRef.elements.name.value;
+  const phone = formRef.elements.phone.value;
+  const address = formRef.elements.address.value;
+
+  if (phone.length < 10 || phone.length > 12) {
+    alert("Введіть коректно номер телефону");
+  } else {
+    let message = `<b>Заявка викрутки!</b>\n`;
+    message += `<b>Ім'я: </b> ${name}\n`;
+    message += `<b>Номер телефону: </b> ${phone}\n`;
+    message += `<b> Адреса доставки: </b> ${address}`;
+
+    axios
+      .post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: "html",
+        text: message,
+      })
+      .then(() => {
+        formRef.reset();
+      })
+      .catch((err) => {
+        throw new Error(err);
+      });
+
+    backDrop.classList.remove("is-hidden");
+  }
+});
+
+backBtn.addEventListener("click", () => {
+  backDrop.classList.add("is-hidden");
+});
+
+backDrop.addEventListener("click", (event) => {
+  if (event.target === backDrop) {
+    backDrop.classList.add("is-hidden");
+  }
+});

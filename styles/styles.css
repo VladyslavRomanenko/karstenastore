@@ -168,12 +168,18 @@ body {
   margin: 20px 0px;
 }
 .order-link {
-  background: linear-gradient(to bottom, #3d3d3d, #3e3e3e98);
+  background-color: #004154;
   padding: 20px 25px;
   border-radius: 15px;
   color: white;
   font-weight: 600;
   font-size: 20px;
+  transition: background-color 250ms linear;
+}
+
+.order-link:hover,
+.order-link:focus {
+  background: #02839a;
 }
 
 .secondary-text {
@@ -219,12 +225,19 @@ body {
   background-color: rgb(181, 181, 181);
   padding: 10px;
   border-radius: 15px;
+  /* transition: background-color 250ms linear; */
+}
+
+.slider-btn:hover .arrow-icon,
+.slider-btn:focus .arrow-icon {
+  fill: rgb(28, 179, 187);
 }
 
 .arrow-icon {
   width: 20px;
   height: 20px;
   fill: rgb(20, 95, 99);
+  transition: fill 150ms linear;
 }
 
 /* information */
@@ -339,7 +352,7 @@ body {
 /* ------------ how to order */
 
 .how-to-order {
-  padding: 20px 10px;
+  padding: 20px 10px 0px;
   text-align: center;
 }
 
@@ -395,5 +408,135 @@ body {
 
   .how-list-item {
     gap: 15px;
+  }
+}
+
+.form-box {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.order-title {
+  margin-bottom: 20px;
+}
+
+.order-text {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.form-input {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.input-address::placeholder {
+  font-size: 16px;
+}
+
+.order-submit {
+  background-color: rgb(20, 95, 99);
+  padding: 20px;
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  transition: background-color 250ms linear;
+}
+
+.order-submit:hover,
+.order-submit:focus {
+  background-color: rgb(2, 59, 62);
+  box-shadow: 2px 2px 5px rgb(204, 204, 204);
+}
+
+@media screen and (min-width: 768px) {
+  .form-box {
+    padding: 30px 20px;
+  }
+
+  .form {
+    max-width: 500px;
+    gap: 30px;
+  }
+}
+/* ----------/ order -------- */
+
+/* ---------- politic ----------- */
+.politic {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  gap: 15px;
+}
+
+.politic-link {
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+/* modal-thanks */
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 500ms linear, visibility 700ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.thanks {
+  background-color: #fff;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.thanks-title {
+  text-align: center;
+}
+
+.thanks-link {
+  background-color: rgb(20, 95, 99);
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: background-color 250ms linear;
+}
+
+.thanks-link:hover,
+.thanks-link:focus {
+  background-color: #004154;
+}
+
+@media screen and (min-width: 768px) {
+  .thanks {
+    padding: 30px 25px;
+    gap: 25px;
+  }
+
+  .thanks-link {
+    padding: 15px 30px;
   }
 }

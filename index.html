@@ -136,7 +136,11 @@
           затягнути гвинт однією рукою.
         </p>
       </div>
-      <img src="./images/gif.gif" alt="анімація викрутка" class="animation" />
+      <img
+        src="./images/gif-min.gif"
+        alt="анімація викрутка"
+        class="animation"
+      />
       <!-- information -->
 
       <div class="order-box">
@@ -363,6 +367,60 @@
         </div>
       </div>
       <!-- / timer -->
+
+      <!-- order -->
+      <div id="order" class="form-box">
+        <h2 class="order-title">Залишіть заявку зараз</h2>
+        <p class="order-text">
+          Наш менеджер зв'яжеться з вами для консультації та допоможе оформити
+          замовлення.
+        </p>
+        <form class="form">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Введіть Ваше ім'я "
+            required
+            name="name"
+          />
+          <input
+            class="form-input"
+            type="number"
+            placeholder="Введіть Ваш телефон "
+            required
+            name="phone"
+          />
+          <input
+            class="form-input input-address"
+            type="text"
+            placeholder="Введіть місто/село отримання"
+            required
+            name="address"
+          />
+          <button type="submit" class="order-submit">ЗАМОВИТИ ЗАРАЗ</button>
+        </form>
+        <p class="secondary-text">
+          Залишилось <span class="secondary-text-bold">11 наборів</span> по
+          акційній ціні
+        </p>
+      </div>
+      <div class="politic">
+        <a href="./files/conf.pdf" target="_blank" class="politic-link"
+          >Політика конфіденційності</a
+        >
+        <a href="./files/off.pdf" target="_blank" class="politic-link"
+          >Публічна оферта</a
+        >
+      </div>
+    </div>
+    <div class="backdrop is-hidden">
+      <div class="thanks">
+        <h2 class="thanks-title">Дякуємо за замовлення!</h2>
+        <p class="thanks-title">
+          Наш менеджер скоро зв'яжеться з Вами! Очікуйте на дзвінок!
+        </p>
+        <button class="thanks-link">Повернутись назад</button>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="./js/index.js" type="module"></script>
