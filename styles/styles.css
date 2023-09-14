@@ -161,6 +161,8 @@ body {
 
 .order-box {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
@@ -282,3 +284,116 @@ body {
 }
 
 /* ------------- reviews */
+
+.reviews {
+  padding: 20px 15px;
+}
+
+.reviews-title {
+  margin-bottom: 20px;
+  color: rgb(20, 95, 99);
+  text-align: center;
+}
+
+.reviews-text {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.reviews-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3db;
+  padding: 20px 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px rgb(173, 173, 173);
+}
+
+.review-photo {
+  border-radius: 150px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: rgb(20, 95, 99);
+}
+
+.review {
+  text-align: center;
+}
+
+/* ------------ how to order */
+
+.how-to-order {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.how-title {
+  margin-bottom: 30px;
+}
+
+.how-list {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.how-list-item {
+  background-color: rgb(20, 95, 99);
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  position: relative;
+}
+
+.how-icon {
+  width: 35px;
+  height: 35px;
+  fill: white;
+}
+
+.how-text {
+  color: white;
+  font-size: 14px;
+}
+
+.how-number {
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(20, 95, 99);
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -165%);
+  border: 1px solid white;
+}
+
+@media screen and (min-width: 375px) {
+  .how-list {
+    max-width: 350px;
+  }
+
+  .how-list-item {
+    gap: 15px;
+  }
+}
