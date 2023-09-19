@@ -4,6 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>karstenastore</title>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "717298773542899");
+      fbq("track", "Lead");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=717298773542899&ev=PageView&noscript=1"
+    /></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +64,7 @@
         </div>
         <div class="price-box price-border">
           <p class="price-text">Ціна сьогодні:</p>
-          <p class="price-num">339 грн</p>
+          <p class="price-num">299 грн</p>
         </div>
       </div>
       <!-- / price -->
@@ -343,7 +377,7 @@
         </div>
         <div class="price-box price-border">
           <p class="price-text">Ціна сьогодні:</p>
-          <p class="price-num">339 грн</p>
+          <p class="price-num">299 грн</p>
         </div>
       </div>
       <!-- / price -->
@@ -399,6 +433,13 @@
           />
           <button type="submit" class="order-submit">ЗАМОВИТИ ЗАРАЗ</button>
         </form>
+        <script>
+          document
+            .querySelector(".form")
+            .addEventListener("submit", function () {
+              fbq("track", "Lead");
+            });
+        </script>
         <p class="secondary-text">
           Залишилось <span class="secondary-text-bold">11 наборів</span> по
           акційній ціні
